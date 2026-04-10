@@ -1,0 +1,214 @@
+<resources>
+    <!-- App -->
+    <string name="app_title">Terminowo</string>
+
+    <!-- Main screen -->
+    <string name="scan_document">Skanuj dokument</string>
+    <string name="no_documents_yet">Brak dokument\u00F3w</string>
+    <string name="empty_state_hint">Naci\u015Bnij +, aby zeskanowa\u0107\npierwszy dokument</string>
+    <string name="delete_document_confirm_title">Usun\u0105\u0107 dokument?</string>
+    <string name="delete_document_confirm_message">Czy na pewno chcesz usun\u0105\u0107 %1$s? Tej operacji nie mo\u017Cna cofn\u0105\u0107.</string>
+    <string name="delete">Usu\u0144</string>
+    <string name="cancel">Anuluj</string>
+
+    <!-- Detail screen -->
+    <string name="new_document">Nowy dokument</string>
+    <string name="document_details">Szczeg\u00F3\u0142y dokumentu</string>
+    <string name="back">Wstecz</string>
+    <string name="document_name">Nazwa dokumentu</string>
+    <string name="category">Kategoria</string>
+    <string name="expiry_date_format">Data wa\u017Cno\u015Bci</string>
+    <string name="select_expiry_date">Wybierz dat\u0119 wa\u017Cno\u015Bci</string>
+    <string name="expiry_date_required">Data wa\u017Cno\u015Bci jest wymagana</string>
+    <string name="ocr_confidence">Pewno\u015B\u0107 OCR: %1$d%</string>
+    <string name="reminders">Przypomnienia</string>
+    <string name="save_document">Zapisz dokument</string>
+    <string name="document_added">%1$s dodano</string>
+    <string name="update_document">Aktualizuj dokument</string>
+    <string name="delete_document">Usu\u0144 dokument</string>
+    <string name="document_image">Zdj\u0119cie dokumentu</string>
+    <string name="close">Zamknij</string>
+    <string name="my_comments">Moje komentarze</string>
+
+    <!-- Camera screen -->
+    <string name="camera_permission_required">Wymagane uprawnienie do kamery, aby skanowa\u0107 dokumenty.</string>
+    <string name="go_back">Wr\u00F3\u0107</string>
+    <string name="failed_read_captured_image">Nie uda\u0142o si\u0119 odczyta\u0107 zdj\u0119cia</string>
+    <string name="capture_failed">B\u0142\u0105d przechwytywania</string>
+    <string name="scan">Skanuj</string>
+
+    <!-- Image preview screen -->
+    <string name="review_image">Przegl\u0105d zdj\u0119cia</string>
+    <string name="captured_document">Zeskanowany dokument</string>
+    <string name="failed_load_image">Nie uda\u0142o si\u0119 za\u0142adowa\u0107 zdj\u0119cia</string>
+    <string name="retake">Powt\u00F3rz</string>
+    <string name="get_expiry_date">Pobierz dat\u0119 wa\u017Cno\u015Bci</string>
+    <string name="failed_read_image">Nie uda\u0142o si\u0119 odczyta\u0107 zdj\u0119cia</string>
+    <string name="ocr_processing_failed">B\u0142\u0105d przetwarzania OCR</string>
+    <string name="extracting_expiry_date">Rozpoznawanie daty wa\u017Cno\u015Bci\u2026</string>
+
+    <!-- Document list item -->
+    <string name="no_expiry_date">Brak daty wa\u017Cno\u015Bci</string>
+    <string name="expired_with_date">Wygas\u0142 (%1$s)</string>
+    <string name="expires_today">Wygasa dzisiaj</string>
+    <string name="expires_tomorrow">Wygasa jutro</string>
+    <string name="expires_on_date">Wygasa %1$s</string>
+
+    <!-- Auth info dialog -->
+    <string name="auth_info_title">Jak to działa</string>
+    <string name="auth_info_message">Aplikacja skanuje dokumenty i automatycznie odczytuje daty ważności za pomocą OCR.\n\nAby włączyć skanowanie, zaloguj się przez Google. Bez logowania możesz dodawać dokumenty ręcznie.</string>
+    <string name="auth_info_ok">Dalej</string>
+
+    <!-- Auth dialog -->
+    <string name="auth_dialog_title">W\u0142\u0105czy\u0107 skanowanie?</string>
+    <string name="auth_dialog_message">Zaloguj si\u0119 przez Google, aby automatycznie odczytywa\u0107 daty wa\u017Cno\u015Bci z dokument\u00F3w za pomoc\u0105 OCR. Mo\u017Cesz pomin\u0105\u0107 i wprowadza\u0107 dane r\u0119cznie.</string>
+    <string name="auth_login">Zaloguj si\u0119</string>
+    <string name="auth_skip">Pomi\u0144</string>
+    <string name="auth_login_failed">Logowanie nie powiod\u0142o si\u0119. Spr\u00F3buj ponownie.</string>
+    <string name="enter_manually">Wprowad\u017A r\u0119cznie</string>
+
+    <!-- Account menu -->
+    <string name="account">Konto</string>
+    <string name="sign_out">Wyloguj si\u0119</string>
+    <string name="not_signed_in">Nie zalogowano</string>
+    <string name="sign_in_for_ocr">Zaloguj si\u0119, aby automatycznie odczytywa\u0107 daty przez OCR</string>
+    <string name="google_api_access_granted">Dost\u0119p do Google API: Przyznany</string>
+
+    <!-- Loading -->
+    <string name="processing">Przetwarzanie\u2026</string>
+
+    <!-- ViewModel defaults -->
+    <string name="default_document_name">Dokument</string>
+    <string name="failed_to_save">Nie uda\u0142o si\u0119 zapisa\u0107</string>
+    <string name="failed_to_delete">Nie uda\u0142o si\u0119 usun\u0105\u0107</string>
+
+    <!-- Search -->
+    <string name="search_documents">Szukaj dokument\u00F3w</string>
+    <string name="no_results">Nie znaleziono dokument\u00F3w</string>
+
+    <!-- Settings -->
+    <string name="settings">Ustawienia</string>
+    <string name="delete_all_documents">Usu\u0144 wszystkie dokumenty</string>
+    <string name="delete_all_confirm_title">Usun\u0105\u0107 wszystkie dokumenty?</string>
+    <string name="delete_all_confirm_message">Spowoduje to trwa\u0142e usuni\u0119cie wszystkich dokument\u00F3w i ich zdj\u0119\u0107. Tej operacji nie mo\u017Cna cofn\u0105\u0107.</string>
+    <string name="delete_files_only">Usu\u0144 tylko pliki</string>
+    <string name="delete_files_confirm_title">Usun\u0105\u0107 wszystkie pliki?</string>
+    <string name="delete_files_confirm_message">Spowoduje to usuni\u0119cie wszystkich zdj\u0119\u0107 i plik\u00F3w PDF, ale zachowa dane dokument\u00F3w (nazwy, daty, przypomnienia). Dokumenty b\u0119d\u0105 wy\u015Bwietla\u0107 zast\u0119pcze miniaturki.</string>
+
+    <!-- Category list screen -->
+    <string name="all_documents">Wszystkie dokumenty</string>
+    <string name="documents_count">%1$d</string>
+
+    <!-- Categories -->
+    <string name="category_insurance">Ubezpieczenia</string>
+    <string name="category_payments">P\u0142atno\u015Bci</string>
+    <string name="category_agreement">Umowy</string>
+    <string name="category_documents">Dokumenty</string>
+    <string name="category_technical_inspection">Przegl\u0105dy</string>
+    <string name="category_subscriptions">Subskrypcje</string>
+    <string name="category_health">Zdrowie</string>
+    <string name="category_other">Inne</string>
+
+    <!-- Reminder intervals -->
+    <string name="reminder_14_days">14 dni wcze\u015Bniej</string>
+    <string name="reminder_7_days">7 dni wcze\u015Bniej</string>
+    <string name="reminder_1_day">1 dzie\u0144 wcze\u015Bniej</string>
+    <string name="reminder_day_of">W dniu wyga\u015Bni\u0119cia</string>
+    <string name="reminder_custom_date">W\u0142asna data</string>
+
+    <!-- Add document bottom sheet -->
+    <string name="add_document">Dodaj dokument</string>
+    <string name="take_photo">Zr\u00F3b zdj\u0119cie</string>
+    <string name="choose_file">Wybierz plik</string>
+    <string name="pick_from_gallery">Wybierz zdjęcie z galerii</string>
+
+    <!-- Time picker -->
+    <string name="notification_time">Czas powiadomienia</string>
+    <string name="confirm">Zatwierd\u017A</string>
+
+    <!-- Empty states per filter -->
+    <string name="empty_list_title">Twoja lista jest pusta</string>
+    <string name="empty_list_subtitle">Ka\u017Cdy dodany dokument pojawi si\u0119 tutaj \u2014 paszport, ubezpieczenie, przegl\u0105d auta i wszystko inne.</string>
+    <string name="empty_active_title">\u017Badnych aktywnych dokument\u00F3w</string>
+    <string name="empty_active_subtitle">Dokumenty z wa\u017Cno\u015Bci\u0105 powy\u017Cej 30 dni pojawi\u0105 si\u0119 w tej zak\u0142adce.</string>
+    <string name="empty_urgent_title">Nic pilnego \u2014 \u015Bwietnie!</string>
+    <string name="empty_urgent_subtitle">Dokumenty wygasaj\u0105ce w ci\u0105gu 30 dni pojawi\u0105 si\u0119 tutaj.</string>
+    <string name="empty_expired_title">Brak wygas\u0142ych dokument\u00F3w</string>
+    <string name="empty_expired_subtitle">Masz wszystko pod kontrol\u0105.</string>
+
+    <!-- Filter tabs -->
+    <string name="filter_all">Wszystkie</string>
+    <string name="filter_active">Aktywne</string>
+    <string name="filter_urgent">Pilne</string>
+    <string name="filter_expired">Wygas\u0142e</string>
+
+    <!-- Pulpit (Dashboard) screen -->
+    <string name="pulpit_title">Tw\u00F3j pulpit</string>
+    <string name="document_score">Wynik dokument\u00F3w</string>
+    <string name="status_expired">Wygas\u0142e</string>
+    <string name="status_within_30_days">\u2264 30 dni</string>
+    <string name="status_over_30_days">> 30 dni</string>
+    <string name="upcoming_deadlines">Zbli\u017Caj\u0105ce si\u0119 terminy</string>
+    <string name="all_documents_ok">Wszystkie dokumenty s\u0105 aktualne</string>
+    <string name="all_documents_ok_subtitle">Daj zna\u0107, kiedy co\u015B b\u0119dzie wymaga\u0142o uwagi.</string>
+    <string name="no_documents_pulpit_title">Nie masz jeszcze \u017Cadnych dokument\u00F3w</string>
+    <string name="no_documents_pulpit_subtitle">Dodaj pierwszy, \u017Ceby \u015Bledzi\u0107 terminy i dostawa\u0107 przypomnienia na czas.</string>
+    <string name="add_document_button">+ Dodaj dokument</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_pulpit">Pulpit</string>
+    <string name="nav_documents">Dokumenty</string>
+
+    <!-- Notifications -->
+    <string name="notifications_title">Powiadomienia</string>
+    <string name="notifications_empty">Brak powiadomie\u0144</string>
+    <string name="notifications_expires_label">Wygasa</string>
+    <string name="time_ago_just_now">w\u0142a\u015Bnie</string>
+    <string name="time_ago_minutes">%1$d min temu</string>
+    <string name="time_ago_hours">%1$d godz. temu</string>
+    <string name="time_ago_days">%1$d dni temu</string>
+    <string name="time_ago_weeks">%1$d tyg. temu</string>
+
+    <!-- Consent / Legal -->
+    <string name="consent_title">Regulaminy</string>
+    <string name="consent_tos_heading">Regulamin</string>
+    <string name="consent_privacy_heading">Polityka prywatno\u015Bci</string>
+    <string name="consent_accept_tos">Akceptuj\u0119 Regulamin</string>
+    <string name="consent_accept_privacy">Akceptuj\u0119 Polityk\u0119 prywatno\u015Bci</string>
+    <string name="consent_continue">Dalej</string>
+    <string name="consent_read_full">Pe\u0142na wersja</string>
+    <string name="menu_terms_of_service">Regulamin</string>
+    <string name="menu_privacy_policy">Polityka prywatno\u015Bci</string>
+
+    <!-- Plurals -->
+    <plurals name="expired_days_ago">
+        <item quantity="one">Ten dokument wygas\u0142 %1$d dzie\u0144 temu</item>
+        <item quantity="few">Ten dokument wygas\u0142 %1$d dni temu</item>
+        <item quantity="many">Ten dokument wygas\u0142 %1$d dni temu</item>
+        <item quantity="other">Ten dokument wygas\u0142 %1$d dni temu</item>
+    </plurals>
+    <plurals name="expires_in_days">
+        <item quantity="one">Wygasa za %1$d dzie\u0144</item>
+        <item quantity="few">Wygasa za %1$d dni</item>
+        <item quantity="many">Wygasa za %1$d dni</item>
+        <item quantity="other">Wygasa za %1$d dni</item>
+    </plurals>
+    <plurals name="expired_days_ago_short">
+        <item quantity="one">Wygas\u0142 %1$d dzie\u0144 temu</item>
+        <item quantity="few">Wygas\u0142 %1$d dni temu</item>
+        <item quantity="many">Wygas\u0142 %1$d dni temu</item>
+        <item quantity="other">Wygas\u0142 %1$d dni temu</item>
+    </plurals>
+    <plurals name="expires_in_days_short">
+        <item quantity="one">%1$d dzie\u0144</item>
+        <item quantity="few">%1$d dni</item>
+        <item quantity="many">%1$d dni</item>
+        <item quantity="other">%1$d dni</item>
+    </plurals>
+    <plurals name="documents_count_label">
+        <item quantity="one">%1$d dokument</item>
+        <item quantity="few">%1$d dokumenty</item>
+        <item quantity="many">%1$d dokument\u00F3w</item>
+        <item quantity="other">%1$d dokument\u00F3w</item>
+    </plurals>
+</resources>

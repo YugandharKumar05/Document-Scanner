@@ -1,0 +1,204 @@
+<resources>
+    <!-- App -->
+    <string name="app_title">Terminowo</string>
+
+    <!-- Main screen -->
+    <string name="scan_document">Scan Document</string>
+    <string name="no_documents_yet">No documents yet</string>
+    <string name="empty_state_hint">Tap the + button to scan\nyour first document</string>
+    <string name="delete_document_confirm_title">Delete document?</string>
+    <string name="delete_document_confirm_message">Are you sure you want to delete %1$s? This action cannot be undone.</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Detail screen -->
+    <string name="new_document">New Document</string>
+    <string name="document_details">Document Details</string>
+    <string name="back">Back</string>
+    <string name="document_name">Document Name</string>
+    <string name="category">Category</string>
+    <string name="expiry_date_format">Expiry Date</string>
+    <string name="select_expiry_date">Select Expiry Date</string>
+    <string name="expiry_date_required">Expiry date is required</string>
+    <string name="ocr_confidence">OCR confidence: %1$d%</string>
+    <string name="reminders">Reminders</string>
+    <string name="save_document">Save Document</string>
+    <string name="document_added">%1$s added</string>
+    <string name="update_document">Update Document</string>
+    <string name="delete_document">Delete Document</string>
+    <string name="document_image">Document image</string>
+    <string name="close">Close</string>
+    <string name="my_comments">My comments</string>
+
+    <!-- Camera screen -->
+    <string name="camera_permission_required">Camera permission is required to scan documents.</string>
+    <string name="go_back">Go Back</string>
+    <string name="failed_read_captured_image">Failed to read captured image</string>
+    <string name="capture_failed">Capture failed</string>
+    <string name="scan">Scan</string>
+
+    <!-- Image preview screen -->
+    <string name="review_image">Review Image</string>
+    <string name="captured_document">Captured document</string>
+    <string name="failed_load_image">Failed to load image</string>
+    <string name="retake">Retake</string>
+    <string name="get_expiry_date">Get Expiry Date</string>
+    <string name="failed_read_image">Failed to read image</string>
+    <string name="ocr_processing_failed">OCR processing failed</string>
+    <string name="extracting_expiry_date">Extracting expiry date...</string>
+
+    <!-- Document list item -->
+    <string name="no_expiry_date">No expiry date</string>
+    <string name="expired_with_date">Expired (%1$s)</string>
+    <string name="expires_today">Expires today</string>
+    <string name="expires_tomorrow">Expires tomorrow</string>
+    <string name="expires_on_date">Expires %1$s</string>
+
+    <!-- Auth info dialog -->
+    <string name="auth_info_title">How It Works</string>
+    <string name="auth_info_message">This app scans your documents and automatically extracts expiry dates using OCR.\n\nTo enable scanning, you need to sign in with Google. Without signing in, you can still add documents manually.</string>
+    <string name="auth_info_ok">Continue</string>
+
+    <!-- Auth dialog -->
+    <string name="auth_dialog_title">Enable Document Scanning?</string>
+    <string name="auth_dialog_message">Sign in with Google to automatically extract expiry dates from your documents using OCR. You can skip this and enter data manually.</string>
+    <string name="auth_login">Sign In</string>
+    <string name="auth_skip">Skip</string>
+    <string name="auth_login_failed">Login failed. Please try again.</string>
+    <string name="enter_manually">Enter Manually</string>
+
+    <!-- Account menu -->
+    <string name="account">Account</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="not_signed_in">Not signed in</string>
+    <string name="sign_in_for_ocr">Sign in to enable automatic date extraction via OCR</string>
+    <string name="google_api_access_granted">Google API access: Granted</string>
+
+    <!-- Loading -->
+    <string name="processing">Processing...</string>
+
+    <!-- ViewModel defaults -->
+    <string name="default_document_name">Document</string>
+    <string name="failed_to_save">Failed to save</string>
+    <string name="failed_to_delete">Failed to delete</string>
+
+    <!-- Search -->
+    <string name="search_documents">Search documents</string>
+    <string name="no_results">No documents found</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="delete_all_documents">Delete all documents</string>
+    <string name="delete_all_confirm_title">Delete all documents?</string>
+    <string name="delete_all_confirm_message">This will permanently delete all your documents and their images. This action cannot be undone.</string>
+    <string name="delete_files_only">Delete files only</string>
+    <string name="delete_files_confirm_title">Delete all files?</string>
+    <string name="delete_files_confirm_message">This will delete all document images and PDFs, but keep your document records (names, dates, reminders). Documents will show placeholder thumbnails.</string>
+
+    <!-- Category list screen -->
+    <string name="all_documents">All Documents</string>
+    <string name="documents_count">%1$d</string>
+
+    <!-- Categories -->
+    <string name="category_insurance">Insurance</string>
+    <string name="category_payments">Payments</string>
+    <string name="category_agreement">Agreement</string>
+    <string name="category_documents">Documents</string>
+    <string name="category_technical_inspection">Technical Inspection</string>
+    <string name="category_subscriptions">Subscriptions</string>
+    <string name="category_health">Health</string>
+    <string name="category_other">Other</string>
+
+    <!-- Reminder intervals -->
+    <string name="reminder_14_days">14 days before</string>
+    <string name="reminder_7_days">7 days before</string>
+    <string name="reminder_1_day">1 day before</string>
+    <string name="reminder_day_of">Day of expiry</string>
+    <string name="reminder_custom_date">Custom date</string>
+
+    <!-- Add document bottom sheet -->
+    <string name="add_document">Add Document</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_file">Choose File</string>
+    <string name="pick_from_gallery">Select Photo from Gallery</string>
+
+    <!-- Time picker -->
+    <string name="notification_time">Notification time</string>
+    <string name="confirm">Confirm</string>
+
+    <!-- Empty states per filter -->
+    <string name="empty_list_title">Your list is empty</string>
+    <string name="empty_list_subtitle">Every document you add will appear here \u2014 passport, insurance, car inspection, and more.</string>
+    <string name="empty_active_title">No active documents</string>
+    <string name="empty_active_subtitle">Documents valid for more than 30 days will appear in this tab.</string>
+    <string name="empty_urgent_title">Nothing urgent \u2014 great!</string>
+    <string name="empty_urgent_subtitle">Documents expiring within 30 days will appear here.</string>
+    <string name="empty_expired_title">No expired documents</string>
+    <string name="empty_expired_subtitle">You have everything under control.</string>
+
+    <!-- Filter tabs -->
+    <string name="filter_all">All</string>
+    <string name="filter_active">Active</string>
+    <string name="filter_urgent">Urgent</string>
+    <string name="filter_expired">Expired</string>
+
+    <!-- Pulpit (Dashboard) screen -->
+    <string name="pulpit_title">Your dashboard</string>
+    <string name="document_score">Document score</string>
+    <string name="status_expired">Expired</string>
+    <string name="status_within_30_days">\u2264 30 days</string>
+    <string name="status_over_30_days">> 30 days</string>
+    <string name="upcoming_deadlines">Upcoming deadlines</string>
+    <string name="all_documents_ok">All documents are up to date</string>
+    <string name="all_documents_ok_subtitle">We'll let you know when something needs attention.</string>
+    <string name="no_documents_pulpit_title">You don't have any documents yet</string>
+    <string name="no_documents_pulpit_subtitle">Add your first to track deadlines and get reminders on time.</string>
+    <string name="add_document_button">+ Add document</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_pulpit">Dashboard</string>
+    <string name="nav_documents">Documents</string>
+
+    <!-- Notifications -->
+    <string name="notifications_title">Notifications</string>
+    <string name="notifications_empty">No notifications yet</string>
+    <string name="notifications_expires_label">Expires</string>
+    <string name="time_ago_just_now">just now</string>
+    <string name="time_ago_minutes">%1$d min ago</string>
+    <string name="time_ago_hours">%1$d h ago</string>
+    <string name="time_ago_days">%1$d days ago</string>
+    <string name="time_ago_weeks">%1$d weeks ago</string>
+
+    <!-- Consent / Legal -->
+    <string name="consent_title">Terms &amp; Privacy</string>
+    <string name="consent_tos_heading">Terms of Service</string>
+    <string name="consent_privacy_heading">Privacy Policy</string>
+    <string name="consent_accept_tos">I accept the Terms of Service</string>
+    <string name="consent_accept_privacy">I accept the Privacy Policy</string>
+    <string name="consent_continue">Continue</string>
+    <string name="consent_read_full">Read full version</string>
+    <string name="menu_terms_of_service">Terms of Service</string>
+    <string name="menu_privacy_policy">Privacy Policy</string>
+
+    <!-- Plurals -->
+    <plurals name="expired_days_ago">
+        <item quantity="one">This document expired %1$d day ago</item>
+        <item quantity="other">This document expired %1$d days ago</item>
+    </plurals>
+    <plurals name="expires_in_days">
+        <item quantity="one">Expires in %1$d day</item>
+        <item quantity="other">Expires in %1$d days</item>
+    </plurals>
+    <plurals name="expired_days_ago_short">
+        <item quantity="one">Expired %1$d day ago</item>
+        <item quantity="other">Expired %1$d days ago</item>
+    </plurals>
+    <plurals name="expires_in_days_short">
+        <item quantity="one">%1$d day</item>
+        <item quantity="other">%1$d days</item>
+    </plurals>
+    <plurals name="documents_count_label">
+        <item quantity="one">%1$d document</item>
+        <item quantity="other">%1$d documents</item>
+    </plurals>
+</resources>

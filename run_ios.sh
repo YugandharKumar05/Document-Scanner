@@ -2,7 +2,7 @@
 set -euo pipefail
 
 SCHEME="iosApp"
-BUNDLE_ID="com.stc.terminowoapp"
+BUNDLE_ID="app.devzenix.docscan"
 PROJECT_DIR="$(cd "$(dirname "$0")" && pwd)"
 IOS_PROJECT_DIR="$PROJECT_DIR/iosApp"
 

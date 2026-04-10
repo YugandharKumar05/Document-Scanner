@@ -1,6 +1,6 @@
 <resources>
     <!-- App -->
-    <string name="app_title">Terminowo</string>
+    <string name="app_title">DevZenix</string>
 
     <!-- Main screen -->
     <string name="scan_document">\u0421\u043A\u0430\u043D\u0443\u0432\u0430\u0442\u0438 \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442</string>

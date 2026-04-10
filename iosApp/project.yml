@@ -1,6 +1,6 @@
 name: iosApp
 options:
-  bundleIdPrefix: com.stc
+  bundleIdPrefix: app.devzenix
   deploymentTarget:
     iOS: "16.0"
 
@@ -19,7 +19,7 @@ targets:
       Release: Secrets.xcconfig
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.stc.terminowo
+        PRODUCT_BUNDLE_IDENTIFIER: app.devzenix.docscan
         INFOPLIST_FILE: iosApp/Info.plist
         CODE_SIGN_IDENTITY: "Apple Development"
         CODE_SIGN_STYLE: Automatic

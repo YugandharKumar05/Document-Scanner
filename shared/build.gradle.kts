@@ -9,6 +9,10 @@ plugins {
     alias(libs.plugins.sqldelight)
 }
 
+compose.resources {
+    packageOfResClass = "app.devzenix.docscan.shared.generated.resources"
+}
+
 kotlin {
     androidTarget {
         compilerOptions {
@@ -97,7 +101,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.stc.terminowo.shared"
+    namespace = "app.devzenix.docscan.shared"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
@@ -113,7 +117,7 @@ android {
 sqldelight {
     databases {
         create("DocumentDatabase") {
-            packageName.set("com.stc.terminowo.data.local.db")
+            packageName.set("app.devzenix.docscan.data.local.db")
             version = 6
         }
     }

@@ -1,6 +1,6 @@
 <resources>
     <!-- App -->
-    <string name="app_title">Terminowo</string>
+    <string name="app_title">DevZenix</string>
 
     <!-- Main screen -->
     <string name="scan_document">Skanuj dokument</string>

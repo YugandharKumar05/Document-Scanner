@@ -18,6 +18,7 @@ android-compileSdk = "36"
 android-minSdk = "26"
 android-targetSdk = "35"
 androidx-activityCompose = "1.9.3"
+androidx-splashscreen = "1.0.1"
 play-services-auth = "21.3.0"
 timber = "5.0.1"
 
@@ -55,6 +56,7 @@ kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-c
 
 # Android
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "androidx-splashscreen" }
 google-play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "play-services-auth" }
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 

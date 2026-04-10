@@ -359,7 +359,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LINKER_FLAGS = "$(inherited) -framework shared";
-				PRODUCT_BUNDLE_IDENTIFIER = com.stc.terminowoapp;
+				PRODUCT_BUNDLE_IDENTIFIER = app.devzenix.docscan;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -385,7 +385,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LINKER_FLAGS = "$(inherited) -framework shared";
-				PRODUCT_BUNDLE_IDENTIFIER = com.stc.terminowoapp;
+				PRODUCT_BUNDLE_IDENTIFIER = app.devzenix.docscan;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

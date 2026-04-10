@@ -27,6 +27,7 @@ kotlin {
         androidMain.dependencies {
             implementation(project(":shared"))
             implementation(libs.androidx.activity.compose)
+            implementation(libs.androidx.core.splashscreen)
             implementation(libs.ktor.client.core)
             implementation(libs.google.play.services.auth)
 
@@ -43,11 +44,11 @@ kotlin {
 }
 
 android {
-    namespace = "com.stc.terminowo"
+    namespace = "app.devzenix.docscan"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "com.stc.terminowo"
+        applicationId = "app.devzenix.docscan"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 4

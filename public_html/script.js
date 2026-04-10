@@ -4,7 +4,7 @@
   /* ──────────────────────────────────────────────
      Constants
      ────────────────────────────────────────────── */
-  var STORAGE_KEY = 'terminowo-lang';
+  var STORAGE_KEY = 'DevZenix-lang';
   var SUPPORTED_LANGS = ['en', 'pl', 'ua', 'ru'];
   var LANG_NAMES = { en: 'English', pl: 'Polski', ua: 'Українська', ru: 'Русский' };
   var DEFAULT_LANG = 'en';

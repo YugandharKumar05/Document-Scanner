@@ -25,6 +25,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Terminowo"
+rootProject.name = "DevZenix"
 include(":shared")
 include(":androidApp")

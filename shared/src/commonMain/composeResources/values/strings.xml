@@ -1,6 +1,6 @@
 <resources>
     <!-- App -->
-    <string name="app_title">Terminowo</string>
+    <string name="app_title">DevZenix</string>
 
     <!-- Main screen -->
     <string name="scan_document">Scan Document</string>
@@ -171,14 +171,14 @@
 
     <!-- Consent / Legal -->
     <string name="consent_title">Terms &amp; Privacy</string>
-    <string name="consent_tos_heading">Terms of Service</string>
-    <string name="consent_privacy_heading">Privacy Policy</string>
+<!--    <string name="consent_tos_heading">Terms of Service</string>-->
+<!--    <string name="consent_privacy_heading">Privacy Policy</string>-->
     <string name="consent_accept_tos">I accept the Terms of Service</string>
     <string name="consent_accept_privacy">I accept the Privacy Policy</string>
     <string name="consent_continue">Continue</string>
     <string name="consent_read_full">Read full version</string>
-    <string name="menu_terms_of_service">Terms of Service</string>
-    <string name="menu_privacy_policy">Privacy Policy</string>
+<!--    <string name="menu_terms_of_service">Terms of Service</string>-->
+<!--    <string name="menu_privacy_policy">Privacy Policy</string>-->
 
     <!-- Plurals -->
     <plurals name="expired_days_ago">

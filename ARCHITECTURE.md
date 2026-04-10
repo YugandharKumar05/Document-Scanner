@@ -2,7 +2,7 @@
 
 ## Overview
 
-Terminowo is a mobile app that scans insurance and other documents, extracts expiry dates via Google Document AI OCR, stores documents locally with SQLDelight, and sends reminder notifications before expiry. No manual date entry — OCR handles it.
+DevZenix is a mobile app that scans insurance and other documents, extracts expiry dates via Google Document AI OCR, stores documents locally with SQLDelight, and sends reminder notifications before expiry. No manual date entry — OCR handles it.
 
 ## Tech Stack
 
@@ -24,7 +24,7 @@ Android targets: compileSdk 36, minSdk 26, JVM 17. Versions managed in `gradle/l
 ## Module Structure
 
 ```
-TerminowoApp/
+DevZenixApp/
 ├── :shared               KMP module — all business logic + UI
 │   ├── commonMain/       Shared Kotlin code (domain, data, presentation, DI)
 │   ├── androidMain/      Android platform actuals
@@ -33,7 +33,7 @@ TerminowoApp/
 └── iosApp/               Xcode project shell (not yet wired)
 ```
 
-Package: `com.stc.terminowo` (shared and androidApp).
+Package: `app.devzenix.docscan` (shared and androidApp).
 
 ## Architecture Layers
 
@@ -100,7 +100,7 @@ Screens: `CategoryListScreen`, `DocumentListScreen`, `CameraScreen` (placeholder
 
 Components: `DocumentListItem`, `ReminderChips`, `LoadingOverlay`, `AccountIconButton`
 
-Theme: `TerminowoTheme` (Material3)
+Theme: `DevZenixTheme` (Material3)
 
 ## Data Flow
 
@@ -184,7 +184,7 @@ Routes (all `@Serializable`):
 
 ## Database Schema
 
-SQLDelight schema at `shared/src/commonMain/sqldelight/com/stc/terminowo/data/local/db/Document.sq`.
+SQLDelight schema at `shared/src/commonMain/sqldelight/app/devzenix/docscan/data/local/db/Document.sq`.
 
 ```sql
 CREATE TABLE DocumentEntity (
@@ -254,7 +254,7 @@ appModules = [dataModule, domainModule, presentationModule, platformModule()]
 | `presentationModule` | `DocumentListViewModel`, `CategoryListViewModel`, `DetailViewModel`, `AuthViewModel` (via `viewModelOf`) |
 | `platformModule()` | expect/actual — `PlatformContext`, `DatabaseDriverFactory`, `ImageStorage`, `NotificationScheduler`, `NotificationPermissionHandler`, `GoogleAuthProvider` |
 
-`ProxyConfig` is injected separately in `TerminowoApp` (androidApp module) from `BuildConfig.PROXY_URL` + `BuildConfig.PROXY_API_KEY`.
+`ProxyConfig` is injected separately in `DevZenixApp` (androidApp module) from `BuildConfig.PROXY_URL` + `BuildConfig.PROXY_API_KEY`.
 
 ## Platform Abstractions
 
@@ -288,7 +288,7 @@ Expect/actual interfaces bridging shared code to native APIs:
 ## File Tree
 
 ```
-shared/src/commonMain/kotlin/com/stc/terminowo/
+shared/src/commonMain/kotlin/app/devzenix/docscan/
 ├── App.kt                                    App() composable entry point
 ├── config/
 │   └── FeatureFlags.kt                       Feature toggles
@@ -358,9 +358,9 @@ shared/src/commonMain/kotlin/com/stc/terminowo/
     │   ├── LoadingOverlay.kt
     │   └── ReminderChips.kt
     └── theme/
-        └── Theme.kt                           TerminowoTheme (Material3)
+        └── Theme.kt                           DevZenixTheme (Material3)
 
-shared/src/androidMain/kotlin/com/stc/terminowo/
+shared/src/androidMain/kotlin/app/devzenix/docscan/
 ├── data/local/
 │   └── DatabaseDriverFactory.android.kt       actual — AndroidSqliteDriver
 ├── platform/
@@ -373,7 +373,7 @@ shared/src/androidMain/kotlin/com/stc/terminowo/
 └── di/
     └── PlatformModule.android.kt              actual — Android Koin bindings
 
-androidApp/src/androidMain/kotlin/com/stc/terminowo/android/
-├── TerminowoApp.kt                            Application class (Koin init)
+androidApp/src/androidMain/kotlin/app/devzenix/docscan/
+├── DevZenixApp.kt                            Application class (Koin init)
 └── MainActivity.kt                            Activity (permission + auth launchers)
 ```

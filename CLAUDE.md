@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This App Does
 
-Mobile app (Terminowo) that scans documents, extracts expiry dates via OCR, stores them locally, and sends reminder notifications. See [ARCHITECTURE.md](ARCHITECTURE.md) for full system design.
+Mobile app (DevZenix) that scans documents, extracts expiry dates via OCR, stores them locally, and sends reminder notifications. See [ARCHITECTURE.md](ARCHITECTURE.md) for full system design.
 
 ## Build & Test Commands
 
@@ -32,7 +32,7 @@ Kotlin Multiplatform (2.1.10) + Compose Multiplatform (1.7.3), Gradle 8.11.1, AG
 
 ## Architecture
 
-Clean Architecture in `:shared` (KMP) and `:androidApp` modules. Package: `com.stc.terminowo`. Four layers: domain, data, presentation, platform + Koin DI. See [ARCHITECTURE.md](ARCHITECTURE.md) for layer details, data flows, navigation graph, and file tree.
+Clean Architecture in `:shared` (KMP) and `:androidApp` modules. Package: `app.devzenix.docscan`. Four layers: domain, data, presentation, platform + Koin DI. See [ARCHITECTURE.md](ARCHITECTURE.md) for layer details, data flows, navigation graph, and file tree.
 
 ## Database
 
@@ -58,7 +58,7 @@ Backend proxy (GCP Cloud Function) → `DocumentAiMapper` with 3-strategy date e
 - **CameraK requires compileSdk 36**: Transitively pulls `activity-compose:1.11.0`.
 - **iOS targets**: Configured in shared/build.gradle.kts but only compile on macOS (skipped on Linux).
 - **Alarmee removed**: Required Kotlin 2.2.20+. Notifications use native AlarmManager via expect/actual instead.
-- **ProGuard**: Release builds have minification enabled. Rules keep Ktor, kotlinx-serialization, and serializer classes (`androidApp/proguard-rules.pro`). **Bug**: ProGuard rules still reference `com.docscanner.**` instead of `com.stc.terminowo.**` — needs fixing before release builds work correctly.
+- **ProGuard**: Release builds have minification enabled. Rules keep Ktor, kotlinx-serialization, and serializer classes (`androidApp/proguard-rules.pro`). **Bug**: ProGuard rules still reference `com.docscanner.**` instead of `app.devzenix.docscan.**` — needs fixing before release builds work correctly.
 
 ## What's Not Done Yet
 

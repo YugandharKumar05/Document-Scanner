@@ -13,12 +13,13 @@
         android:required="false" />
 
     <application
-        android:name=".TerminowoApp"
+        android:name=".DevZenixApp"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
-        android:label="Terminowo"
+        android:label="DevZenix"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Terminowo">
+        android:theme="@style/Theme.DevZenix.Splash">
 
         <activity
             android:name=".MainActivity"
@@ -31,7 +32,7 @@
         </activity>
 
         <receiver
-            android:name="com.stc.terminowo.platform.ReminderReceiver"
+            android:name="app.devzenix.docscan.platform.ReminderReceiver"
             android:exported="false" />
     </application>
 </manifest>

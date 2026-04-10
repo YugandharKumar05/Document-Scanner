@@ -1,4 +1,4 @@
-package = com.stc.terminowo.interop
+package = app.devzenix.docscan.interop
 language = Objective-C
 ---
 #import <UIKit/UIKit.h>

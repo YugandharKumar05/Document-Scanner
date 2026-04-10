@@ -1,0 +1,16 @@
+package app.devzenix.docscan.data.local
+
+import app.cash.sqldelight.db.SqlDriver
+import app.cash.sqldelight.driver.native.NativeSqliteDriver
+import app.devzenix.docscan.data.local.db.DocumentDatabase
+
+actual class DatabaseDriverFactory {
+    actual fun createDriver(): SqlDriver {
+        return NativeSqliteDriver(
+            schema = DocumentDatabase.Schema,
+            name = "document_scanner.db"
+        ).also {
+            it.execute(null, "PRAGMA foreign_keys = ON", 0)
+        }
+    }
+}
